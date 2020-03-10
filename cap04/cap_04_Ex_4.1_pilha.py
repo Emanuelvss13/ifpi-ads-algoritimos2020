@@ -1,24 +1,31 @@
 import turtle
-from math import pi
-def main():
-    circle(turtle, 100)
+import math
+
+def main(bob, radius):
+    t = bob
+    r = radius
+    circle(t, r)
 
 def circle(t, r):
-    circun = (2 * pi) * r
-    n = int(circun / 3) + 1
-    polygon(turtle, n, 1 )
+    circumference = 2 * math.pi * r
+    n = int(circumference / 3) + 1
+    length = circumference / n
+    polygon(t, n, length)
 
-
-def polygon(t, n, lenght):
-    angle = 360.0/n
+def polygon(t, n, length):
+    angle = 360 / n
     for i in range(n):
-        t.fd(lenght)
+        t.fd(length)
         t.lt(angle)
 
 
 
 
-main()
-
-print('main chama circle, circle chama polygon e o polygon é executado.')
-print('__main__ --> circle \ncircle --> polygon\n')
+print('                  ***DIAGRAMA DA PILHA***')
+print('=========================================================')
+print('__main__ "bob"  ----> turtle\n\n         "radius" ----> 100\n\n')
+print('=========================================================')
+print('__circle__ "t" ----> turtle\n\n           "r ----> 100' )
+print('=========================================================')
+print('__polygon "t" ----> turtle\n\n          "n" ----> resultado de circumference\n\n          "lenght ----> circumference / "n"')
+print('=========================================================')
