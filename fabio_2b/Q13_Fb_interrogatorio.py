@@ -4,17 +4,42 @@ def main():
     p3 = input('Mora perto da vitima ?\n responda sim ou nao: ')
     p4 = input('Devia para vitima ?\n responda sim ou nao: ')
     p5 = input('Já trabalhou com a vitima ?\n responda sim ou nao: ')
+    
+    s = 0
+    
+    resultado = interrogatorio(p1, p2, p3, p4, p5, s)
+    
+    print(resultado)
 
-    interrogatorio(p1, p2, p3, p4, p5)
 
-def interrogatorio(p1, p2, p3, p4, p5):
-    if p2 == 'sim' and p1 == 'nao' and p3 == 'nao' and p4 == 'nao' and p5 == 'nao':
-        print('Você esta sendo considerado(a) Suspeito! ')
-    elif p3 == 'sim' and p4 == 'sim'and p1 == 'nao' and p2 == 'nao' and p5 == 'nao':
-        print('Você esta sendo considerado(a) Cúmplice!')
-    elif p5 == 'sim'and p4 == 'nao' and p3 == 'nao' and p2 == 'nao' and p1 == 'nao':
-        print('VOCÊ É O ASSASINO!')
-    else:
-        print('Você é inocente.')
+def interrogatorio(p1, p2, p3, p4, p5, s):
+    if p1 == 'sim':
+        s = s + 1
+    if p2 == 'sim':
+        s = s + 1
+    if p3 == 'sim':
+        s = s + 1
+    if p4 == 'sim':
+        s = s+ 1
+    if p5 == 'sim':
+        s = s + 1
+    contador(s)
+    return s
+
+
+def contador(s):
+    if s == 1:
+        print('INOCENTE')
+    if s == 1:
+        print('INOCENTE')
+    if s == 2:
+        print('SUSPEITO!')
+    if s == 3:
+        print('INOCENTE')
+    if s == 4:
+        print('CÚMPLICE!')
+    if s == 5:
+        print('ASSASINO!')
+
 
 main()
