@@ -7,9 +7,9 @@ def main():
     
     s = 0
     
-    resultado = interrogatorio(p1, p2, p3, p4, p5, s)
     
-    print(resultado)
+    
+    interrogatorio(p1, p2, p3, p4, p5, s)
 
 
 def interrogatorio(p1, p2, p3, p4, p5, s):
@@ -28,18 +28,18 @@ def interrogatorio(p1, p2, p3, p4, p5, s):
 
 
 def contador(s):
-    if s == 1:
-        print('INOCENTE')
-    if s == 1:
-        print('INOCENTE')
     if s == 2:
         print('SUSPEITO!')
-    if s == 3:
-        print('INOCENTE')
     if s == 4:
         print('CÚMPLICE!')
     if s == 5:
         print('ASSASINO!')
+    if s == 0: 
+        print('INOCENTE!')
+    if s == 1:
+        print('INOCENTE!')
+    if s == 3:
+        print('INOCENTE!')
 
 
 main()
