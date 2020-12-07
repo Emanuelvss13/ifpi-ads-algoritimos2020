@@ -1,0 +1,5 @@
+2 – É apresentado o seguinte erro no console:
+      “please define the main method as:
+    	public static void main(String[] args)”.
+      
+Mesmo se corrigirmos esse erro, a variável “contador” deveria ter algum número atribuído antes de ser referenciada.
