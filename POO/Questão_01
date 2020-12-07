@@ -1,4 +1,4 @@
 1 – Não, devemos fazer assim:
       
   javac Avaliacao.java – primeiro compilamos
-  javac Avaliacao – depois executamos
+  java Avaliacao – depois executamos
