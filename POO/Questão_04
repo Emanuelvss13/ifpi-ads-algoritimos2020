@@ -1,0 +1,2 @@
+Esse algoritmo usa a estrutura switch, que também é uma estrutura condicional. Nesse caso o switch esta sendo utilizada para verificar se o valor é 1 ou 2 ou se ele é diferente
+disso, mas como não foi utilizado break ao final de cada instrução o metodo switch não sabe onde parar, com isso ele executa todas as linhas presentes na estrutura. 
