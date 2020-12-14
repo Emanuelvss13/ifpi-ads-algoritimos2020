@@ -4,4 +4,34 @@
 
 3 - O java retorma 0, pois o numero informado no método main esta como argumento da classe e não do método
 
-4
+4 - double x(double valor) {
+      return valor += valor;
+    }
+    
+    ele não estava retornando nada pois o tipo do método era void(vazio) e quando solicitado o System.out.println() é apresentado o seguinte erro:
+    "The method println(boolean) in the type PrintStream is not applicable for the arguments (void)".
+    
+5 - 1º erro: não foi definido o tipo do método e não tem nenhum retorno.
+2º erro: o método tem o mesmo nome da classe.
+
+public class Radio {
+	int volume;
+	
+	int Radios(int volume) {
+		this.volume = volume;
+		return this.volume;
+	}
+}
+
+public class TesteRadio {
+	public static void main(String[] args) {
+		Radio r = new Radio();
+
+		r.Radios(6);
+		
+		System.out.println(r.volume);
+	}
+}
+
+6 - a) - Os dois apresentam o seguiente erro "The field Conta.saldo is not visible".
+b) - 
