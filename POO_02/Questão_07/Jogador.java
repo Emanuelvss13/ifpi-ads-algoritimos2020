@@ -1,5 +1,6 @@
 public class Jogador {
-	int forca, nivel, pontos_atuais;
+	int forca, nivel; 
+	private int pontos_atuais;
 	
 	
 	void Definir(int a, int b, int c) {
