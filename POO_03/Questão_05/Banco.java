@@ -76,7 +76,37 @@ public class Banco {
 		if(num != null) {
 			contas[num].saldo += valor;
 		} else {
-			System.out.println("Conta n„o encontrada!")
+			System.out.println("Conta n√£o encontrada!")
 		}
 	}
+	
+	void transferir(String numCredito, String numDebito, double valor){
+		nc  = consultarIndice(numCredito);
+		nd = consultarIndice(numDebito);
+		
+		contas[nc].saldo += valor;
+		contas[nd].saldo -= valor;
+	}
+	
+	int tContas(){
+		return indice;
+	}
+	
+	int tDinheiro(){
+		int total = 0;
+		for(int i = 0; i < indice; i++){
+			total += contas[i].saldo;
+		}
+		
+		return total
+	}
+	
+	int mSaldo(){
+		int t = tContas();
+		int d = tDinheiro();
+		
+		return t / d;
+	}
+	
+	
 }
