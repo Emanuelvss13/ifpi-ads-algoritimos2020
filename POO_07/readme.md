@@ -46,5 +46,5 @@
      
      Terão de ser alterados todos os métodos que usam exceções.
      
-11) - "Unreachable catch block for ArrayEstourado. It is already handled by the catch block for CaractereInvalido".
+11) - "Unreachable catch block for TipoExcecao2. It is already handled by the catch block for TipoExcecao1,".
       Esse erro é apresentado.
