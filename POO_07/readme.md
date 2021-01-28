@@ -48,3 +48,5 @@
      
 11 - "Unreachable catch block for TipoExcecao2. It is already handled by the catch block for TipoExcecao1,".
       Esse erro é apresentado.
+      
+12 - As letra A e B são printadas pois os "catchs" foram acionados, e a letra C estava fora do bloco try/catch foi printada também. 
