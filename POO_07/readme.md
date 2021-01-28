@@ -1,7 +1,7 @@
-7) - Sim, porque ele utiliza os metodos "sacar" e "depositar" que ja estão refatorados.
+7 - Sim, porque ele utiliza os metodos "sacar" e "depositar" que ja estão refatorados.
      Sim, pois a repetição de codigo foi evitada, e os erros foram melhor tratados; 
 
-9) - Exceções checadas:
+9 - Exceções checadas:
      PROS:
      - Dão robuste ao programa.
      - O compilador obriga o programador a tratar a exceção ou então declarar, conscientemente, que ela será propagada.
@@ -46,5 +46,5 @@
      
      Terão de ser alterados todos os métodos que usam exceções.
      
-11) - "Unreachable catch block for TipoExcecao2. It is already handled by the catch block for TipoExcecao1,".
+11 - "Unreachable catch block for TipoExcecao2. It is already handled by the catch block for TipoExcecao1,".
       Esse erro é apresentado.
