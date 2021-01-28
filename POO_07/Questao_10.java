@@ -12,7 +12,7 @@ public class Questao_10 {
 		Scanner sc = new Scanner(System.in);
 		
 		try {
-			System.out.println("Digite o número menor que 5:");
+			System.out.println("Digite o nÃºmero menor que 5:");
 			int num = sc.nextInt();
 			int[] numeros = {1,2,3,4,5};
 			
@@ -21,11 +21,11 @@ public class Questao_10 {
 			}
 			
 			} catch (InputMismatchException e) {
-				System.out.println("Digite apenas números");
+				System.out.println("Digite apenas nÃºmeros");
 			} catch (ArrayIndexOutOfBoundsException a) {
 				System.out.println("Limite do array estourado");
 			} finally {
-				System.out.println("Digite 0 para sair.");
+				System.out.println("Programa finalizado.");
 			}
 		}
 	
