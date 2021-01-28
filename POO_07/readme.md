@@ -45,3 +45,6 @@
      Quando uma exceção checada é usada herdando "Exception", o código deve capturá-la usando throws no método para delegar sua captura. As exceções de runtime não                    precisam fazer isto, como o próprio nome indica elas não devem ser consideradas pelo compilador.
      
      Terão de ser alterados todos os métodos que usam exceções.
+     
+11) - "Unreachable catch block for ArrayEstourado. It is already handled by the catch block for CaractereInvalido".
+      Esse erro é apresentado.
