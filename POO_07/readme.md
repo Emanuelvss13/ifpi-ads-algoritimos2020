@@ -50,3 +50,9 @@
       Esse erro é apresentado.
       
 12 - As letra A e B são printadas pois os "catchs" foram acionados, e a letra C estava fora do bloco try/catch foi printada também. 
+
+13 - a) 1 - Fazer a retirada dos ifs pois ja estão sendo utilizados exceções.
+        2 - Colocar uma mensagem de erro nas exceções.
+        3 - Colorcar além das mensagens de erro o  erro em si, para que possamos identifica-lo na sua raiz e o codigo não ficar muito confuso.
+     b) Na minha opnião as exceções fazem com que o prgrama "trabalhe sozinho", pois ele mesmo trata erros imediatamente e apresenta ao usuario sem quebrar o programa por               completo(crash).
+     c) Sim, Exemplo: A quesão 10 onde ao invés de utilizar ifs foi utilizado diretamente exceções.
